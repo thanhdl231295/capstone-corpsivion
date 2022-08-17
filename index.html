@@ -31,28 +31,79 @@
                 <a href="#">PAGES&nbsp<i class="fa-solid fa-angle-down"></i></a>
                 <a href="#">CONTACT</a>
             </div>
-            <div class="header_bot">               
-                    <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <i class="fa-solid fa-moon"></i>
+            <div class="header_bot">
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <i class="fa-solid fa-moon"></i>
             </div>
         </div>
     </header>
     <section class="carousel">
         <div class="container">
-            <h1>For those who believe in<br/> leaving a mark</h1>
+            <h1>For those who believe in<br /> leaving a mark</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, iure.</p>
             <button class="btn">Learn More</button>
-        </div>   
+        </div>
+        <button class="arrow_left"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="arrow_right"><i class="fa-solid fa-arrow-right"></i></button>
     </section>
+    <section class="about">
+        <div class="container">
+            <div class="about_col col2">
+                <p>about us</p>
+                <h1>We make the best strategies for you, Enhancing your success</h1>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex
+                    ea.</span>
+                <ul>
+                    <li><a href="#">
+                            <i class="fa-solid fa-circle-check"></i>
+                            UI/UX Design and Development
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Branding Design and Identity
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Mobile App Design and Development
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="about_col col3">
+                <div class="about_img">
+                    <img src="/img/a.jpg" alt="">
+                </div>
+            </div>
+            <div class="about_col col4">
+                <div class="about_img">
+                    <img src="/img/c1.jpg" alt="">
+                    <img src="/img/c4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"> </script>
     <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-                if($(this).scrollTop()){
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop()) {
                     $('header').addClass('sticky');
-                }else{
+                } else {
                     $('header').removeClass('sticky');
                 }
             });
