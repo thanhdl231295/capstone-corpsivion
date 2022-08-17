@@ -239,3 +239,118 @@ header .header_mid a:hover{
     justify-content: space-between;
     height: 100%;
 }
+.challenge{
+    padding: 115px 0;
+    background-color: #f7f7f7;
+}
+.challenge .challenge_row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.challenge .challenge_row .challenge_right{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.challenge .challenge_row .challenge_left span{
+    font-size: 14px;
+    color: #7e7d7d;
+}
+.challenge .challenge_row .challenge_left h1{
+    font-size: 35px;
+    color: #3f3a64;
+    margin-bottom: 24px;
+}
+.challenge .challenge_row .challenge_left p{
+    font-size: 17px;
+    color: #666666;
+}
+.challenge .challenge_row .challenge_left .btn{
+    font-size: 16px;
+    padding: 15px 50px;
+    font-weight: 600;
+    line-height: 16px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: #00a63f;
+    color: #fff;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.challenge .challenge_right .item{
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 30px;
+    transition: all 1s;
+    background-color: #fff;
+}
+.challenge .challenge_right .item h3{
+    margin-top: 10px;
+    font-size: 22px;
+    color: #3f3a64;
+}
+.challenge .challenge_left .btn:hover{
+    background-color: #248750;
+}
+.challenge .challenge_right .item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.services {
+    padding: 75px 0;
+    text-align: center;
+}
+.services .title h1{
+    font-size: 35px;
+    color: #3f3a64;
+}
+.services .services_row {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.services .services_row .services_item img{
+    width: 100%;
+}
+.services .services_row .services_item{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    
+}
+.services .services_row .services_item a{
+    font-size: 19px;
+    padding: 12px 35px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #3f3a64;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    bottom: 30px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.services .services_row .services_item p{
+    font-size: 17px;
+    color: #666666;
+  
+}
+.services .services_row .services_item .btn{
+    font-size: 16px;
+    font-weight: 600;
+    color: #3f3a64;
+    padding: 8px 35px;
+    margin-top: 16px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+.services .services_row .services_item .btn:hover{
+    color: #00a63f;
+}
+.services .services_row .services_item a:hover{
+    color: #00a63f;
+}
