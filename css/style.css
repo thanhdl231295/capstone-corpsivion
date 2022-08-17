@@ -9,35 +9,47 @@ body{
 }
 .container{
     max-width: 1280px;
-    margin: 15px auto;
+    margin:0 auto;
 }
 .header {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition:  all 1s;
 }
 .header .container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-weight: 600;
+    font-weight: 600; 
+    padding: 20px 0;
 }
 .header .header_logo a{
     text-decoration: none;
     font-size: 30px;
+    color: #fff;
 }
 .header .header_logo i{
     color: #009f4d;
+    color: #fff;
 }
 .header .header_logo .header_logo_detal{
     font-size: 14px;
     display: block;
     padding-left: 46px;
     font-weight: 600;
+    color: #fff;
 }
 .header .header_mid a{
     text-decoration: none;
     padding: 0 10px;
     font-size: 15px;
+    color: #dcdee0;
+    transition:  all 1s;
 }
 .header .header_bot .fa-magnifying-glass{
     width: 45px;
@@ -47,7 +59,8 @@ body{
     text-align: center;
     line-height: 45px;
     border-radius: 50%;
-   margin-right: 10px;
+    margin-right: 10px;
+    color: #fff;
 }
 .header .header_bot .fa-moon{
     width: 30px;
@@ -55,7 +68,31 @@ body{
     font-size: 20px;
     text-align: center;
     line-height: 30px;
-    
+    color: #fff;
+}
+.sticky{
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 5 15px rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+}
+.sticky .header_logo span{
+    color: #3f3a64;
+}
+.sticky .header_logo .header_logo_detal{
+    color: #3f3a64;
+}
+.sticky .header_logo .fa-align-left{
+    color:#3f3a64;
+}
+.sticky .header_mid a{
+    color: #3f3a64;
+}
+.sticky .header_bot .fa-moon{
+    color: #3f3a64 ;
+}
+header .header_mid a:hover{
+    color: #fff;
 }
 .carousel{
     background-image: url(/img/b1.jpg);
@@ -63,9 +100,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
-    display: flex;
+    position: relative;
+    z-index: 0;
+}
+.carousel .container{
+    display: flex; 
     flex-direction: column;
     justify-content: center;
+    height: 100%;  
 }
 .carousel h1{
     font-size: 65px;
@@ -87,4 +129,22 @@ body{
     border: 1px solid transparent;
     border-radius: 10px;
     font-weight: 600;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 1s;
+    width: 200px;
+}
+.carousel::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(126, 49, 49, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.carousel .btn:hover{
+    background-color: #248750;
 }
