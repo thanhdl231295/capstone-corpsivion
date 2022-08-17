@@ -15,18 +15,15 @@ html , body {
 }
 /* HEADER */
 header{
-    height: 100px;
-    align-items: center;
-    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
     position: fixed;    
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
     inset: 0;
     width: 100%;
     z-index: 1030;
-    /* margin-top: 20px; */
-    background: white;
-    
-
+    padding: 20px 0;
 }
+
+
 .title {
     display: flex;
     justify-content: space-between;
@@ -44,12 +41,12 @@ header{
     border-radius: 100%;
     box-sizing: border-box;
     background: #009f4d;
-    margin: 16px;
+    /* margin: 16px; */
 }
 .header .title .icon i:last-of-type{
     font-size: 25px;
     font-weight: 400;
-    color: #404040;
+    color: #fff;
 }
 
 /* navbar */
@@ -57,7 +54,7 @@ header{
     padding: 14px 0 10px;
     font-size: 15px;
     font-weight: 600;
-    color: #404040;
+    color: #fff;
     opacity: .8;
     text-decoration: none;
     padding: 14px 12px 10px 12px;
@@ -66,7 +63,7 @@ header{
 
 /* logo */
 .header .title .header_logo--top a{ 
-    color: #404040;
+    color: #fff;
     font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
@@ -76,7 +73,7 @@ header{
     font-size: 14px;
     padding-left: 46px;
     text-decoration: none;
-    color: #404040;
+    color: #fff;
 }
 .header .title .header_logo--bottom{
     margin-top: -8px;
