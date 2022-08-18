@@ -470,14 +470,9 @@ z-index: 1;
     margin-bottom: 48px;
 }
 .team .team_row{
-    display: flex
-
+    display: flex;
+    gap: 30px;
 }
-.team .team_row .team_col {
-  
-}
-
-
 
 
 .team .team_row .team_col .team_item .team_item_thumbnail img{
@@ -489,28 +484,270 @@ z-index: 1;
     margin: 25px 0 5px;
     font-size: 20px;
     font-weight: 600;
+    transition: all .4s;
+}.team .team_row .team_col .team_item h4:hover{
+    color: #009f4d;
+    cursor: pointer;
 }
+
+
+
 .team .team_row .team_col .team_item p{
     font-size: 17px;
     line-height: 27px;
     color: #f666;
     opacity: .8;
+    border-radius: 8px;
 }
-.team .team_row .team_col .team_item .team_item_thumbnail{ 
+.team .team_row .team_col .team_item .team_item_thumbnail{
     position: relative;
 }
 
-/* .team .team_row .team_col .team_item .team_info{
-   position: absolute;
+.team .team_row .team_col .team_item .team_info{
+    position: absolute;
     background-color: rgba(20, 20, 20, 0.7);
     bottom: 0 ;
     left: 0;
     width: 100%;
     height: 100%;
-    color: white
-
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: all .4s ease-in-out;
    
-   
-} */
+}
+.team .team_row .team_col .team_item .team_info:hover{
+    opacity: 1;
+}
+.team .team_row .team_col .team_item .team_info:hover .team_info_text{
+    transform: translateY(-120px);
+}
+.team .team_row .team_col .team_item .team_info:hover .team_info_icon{
+    transform: translateY(-80px);
+}
+.team .team_row .team_col .team_item .team_info .team_info_text{
+    transition: all .4s ease-in-out;
+}
+.team .team_row .team_col .team_item .team_info .team_info_icon{
+    transition: all .4s ease-in-out;
+}
 
 
+
+
+.team .team_row .team_col .team_item .team_info a{
+    line-height: 37px;
+    color: #fff;
+    font-size: 14px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin-right: 10px;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+
+}
+.team .team_row .team_col .team_item .team_info a:hover{
+    background-color: #616161;
+    color: #fff;
+}
+
+
+/* content */
+.content{
+    background: #f7f7f7;
+    padding: 100px 0 150px 0;
+}
+.content .content_title{
+
+    text-align: center;
+}
+.content .content_title p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #7e7d7d;
+    
+}
+.content .content_title h2{
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+.content .content_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.content .content_row .content_item .content_icon{
+    color: #009f4d;
+    border: 1px solid #009f4d;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 30px;
+
+}
+.content .content_row .content_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.content .content_row .content_item .content_icon{
+    width: 20%;
+}
+
+.content .content_row .content_item .icon2{
+    color: #213364;
+    border:1px solid #213364;
+}
+.content .content_row .content_item .icon3{
+    color: #ff4c4c;
+    border:1px solid #ff4c4c;
+
+}
+.content .content_row .content_item .icon4{
+    color: #f48924;
+    border: 1px solid #f48924;
+}
+.content .content_row .content_item h3{
+    text-align: left;
+    margin-bottom: 0;
+    color: #3f3a64;
+    font-weight: 600;
+    font-size: 24px;
+    transition: all .4s ease-in-out;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+.content .content_row .content_item h3:hover{
+    color: #009f4d;
+    cursor: pointer;
+}
+.content .content_row .content_item p{
+    font-size: 17px;
+    line-height: 27px;
+    color: #666;
+    opacity: .8;
+}
+    /* contact */
+.contact{
+    padding: 100px 15px;
+}
+.contact .contact_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .contact_row .contact_left{
+    width: 55%;
+    margin-left: 55px;
+}
+.contact .contact_row .contact_left h2{
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+}
+.contact .contact_row .contact_left p{
+    font-size: 17px;
+    line-height: 27px;
+    color: #666;
+    opacity: .8;
+    margin-top: 16px;
+}
+.contact .contact_row .contact_right{
+    margin-right: 30px;
+}
+/* footer */
+footer{
+    padding-top: 80px;
+    background: #151421;
+}
+.footer .footer_row{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    gap: 20px;
+}
+ul{
+    list-style: none;
+    padding: 0;margin: 0;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 28px;
+    color: #97a1a9;
+    opacity: .8;
+}
+.footer .footer_logo{
+    margin-bottom: 25px;
+}
+.footer .footer_logo--top a{ 
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.footer .footer_logo--bottom a{
+    font-size: 14px;
+    padding-left: 46px;
+    text-decoration: none;
+    color: #fff;
+}
+.footer .footer_logo--bottom{
+    margin-top: -8px;
+
+}
+.footer .footer_logo--top a i{
+    color: #009f4d;
+}
+.footer .footer_row .footer_item a{
+    padding-right: 10px;
+}
+.footer .footer_row .footer_item .footer_top h6{
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: .5px;
+}
+.footer .footer_row .footer_item .footer_body p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #97a1a9;
+    transition: all .4s;
+}
+.footer .footer_row .footer_item .footer_body li{
+
+    /* margin-bottom: 5px; */
+}
+.footer .footer_row .footer_item .footer_body a{
+    color: #97a1a9;
+    transition: all .4s;
+}
+.footer .footer_row .footer_item .footer_body a:hover{
+    color: #fff;
+}
+
+.coppyright{
+    text-align: center;
+    border-top: 1px solid rgba(249, 249, 249, 0.1);
+    padding: 24px 0 8px 0;
+}
+.coppyright span{
+    color: #009f4d;
+}
