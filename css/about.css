@@ -75,6 +75,8 @@ header.sticky .icon i:first-of-type{
     box-sizing: border-box;
     background: #009f4d;
     color: white;
+    margin-right: 10px;
+    cursor: pointer;
 }
 .header .icon i:last-of-type{
     font-size: 25px;
@@ -237,7 +239,12 @@ header.sticky .icon i:first-of-type{
     border-radius: 50%;
     color: #00a63f;
     margin-left: 40px;
+    transition: all 0.4s;
 }
+.btn_video:hover{
+    transform: scale(1.2);
+}
+
 
 
 .exp .exp_row .exp_left{
