@@ -788,3 +788,45 @@ header .header_mid a:hover{
     text-decoration: none;
     color: #00a63f;
 }
+.btn_back_to_up{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: #00a63f;
+    color: #fff;
+    border: 1px solid #00a63f;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+}
+.bar_scroll{
+    position: fixed;
+    right: 0;
+    top: 140px;
+    width: 90px;
+    background: #0D1326;
+    color: #fff;
+    padding: 40px 5px 10px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.bar_scroll a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    transition:  all 1s;
+}
+.bar_scroll i{
+ display: block;
+}
+.bar_scroll .bar_scroll_mid{
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+}
+.bar_scroll a:hover{
+    color: #fff;
+}
