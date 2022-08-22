@@ -230,9 +230,16 @@ header.sticky .icon i:first-of-type{
     padding: 0;
     margin: 0;
  }
+
+ .map{
+    background: #f8f9fa;
+ }
  .form{
     padding: 75px 0;
-    width: 900px;
+    background: #f8f9fa;
+}
+.form .form_container{
+    max-width: 900px;
     margin: auto;
 }
 .form .form_title{
@@ -252,6 +259,8 @@ header.sticky .icon i:first-of-type{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    max-width: 900px;
+    margin: auto;
  }
  .form .form_main .form_top input{
     color: #666;
@@ -266,9 +275,10 @@ header.sticky .icon i:first-of-type{
     width: 100%;
  }
  .form .form_main .form_bot{
-   margin-top: ;
    height: 130px;
    margin: 30px 0;
+   display: inline-block;
+   
  }
  .form .form_main .form_bot textarea{
     color: #666;
@@ -281,11 +291,11 @@ header.sticky .icon i:first-of-type{
     border: 1px solid #eee;
     border-radius: 8px;
     width: 100%;
-    display: block;
+
  }
  .form .form_main .point{
     text-align: right;
-    margin-top: 50px;
+    margin-top: 30px;
  }
 
  
@@ -356,10 +366,7 @@ a{
     color: #97a1a9;
     transition: all .4s;
 }
-.footer .footer_row .footer_item .footer_body li{
 
-    /* margin-bottom: 5px; */
-}
 .footer .footer_row .footer_item .footer_body a{
     color: #97a1a9;
     transition: all .4s;
