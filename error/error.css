@@ -164,95 +164,112 @@ header.sticky .icon i:first-of-type{
     font-size: 20px;
     opacity: 0.7;
 }
-/* blog */
-.blog{
-    background-color: #f8f8f8;
-    padding: 100px 0 150px 0;
-}
-.blog .blog_row{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.blog .blog_row .blog_left{
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-}
-.blog .blog_row .blog_left .blog_item .blog_top{
-    display: block;
-    overflow: hidden;
-}
-.blog .blog_row .blog_left .blog_item .blog_top img{
-   max-width: 367px;
-   max-height: 244px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    overflow: hidden;
-}
-.blog .blog_row .blog_left .blog_item .blog_body{
-    padding: 20px;
-    display: block;
-    background-color: #fff;
-}
-.blog .blog_row .blog_left .blog_item .blog_body a:first-of-type{
-    font-weight: 400;
-    font-size: 17px;
-    color: #999;
-    display: block;
-}
-.blog .blog_row .blog_left .blog_item .blog_body a:last-of-type{
-    display: block;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 600;
-    color: #3f3a64;
-    margin-top: 10px;
-}
-.blog .blog_row .blog_left .blog_item .blog_bot{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #fff;
-    border-top: 1px solid #eee;
-}
-.blog .blog_row .blog_left .blog_item .blog_bot span{
-    color: #3f3a64;
-}
-.blog .blog_row .blog_left .blog_item .blog_bot .blog_bot_left a{
-    font-size: 16px;
-    color: #999;
-    font-weight: 600;
-    line-height: 26px;
-}
-.blog .blog_row .blog_left .blog_item .blog_bot .blog_bot_right p{
-    color: #999;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 26px;
-}
-.blog .blog_row .blog_left .blog_item{
-    overflow: hidden;
-}
-.blog .blog_row .blog_left .blog_item .blog_top img{
-    max-width: 100%;
-    transition:all 0.3s ease-in-out;
-    display: block;
 
+.error{
+ background-color:#f8f9fa;
+color: #404040;
+line-height: 24px;
+padding: 48px 0px;
+text-align: left;
+padding-top: 100px;
 }
-.blog .blog_row .blog_left .blog_item:hover{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+ .error .error_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 880px;
+    margin: auto;
+ }
+ .error .error_row .error_left{
+    width: 50%;
+ }
+ .error .error_row .error_left img{
+    width: 328px;
+    height: 360px;
+        display: inline;
+ }
+
+
+
+
+
+
+
+
+
+ .error .error_row .error_right{
+    width: 50%;
+ }
+ .error .error_row .error_right h3{
+    color:#009f4d;
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 120px;
+    text-align: center;
+ }
+ .error .error_row .error_right h4{
+    color:#3f3a64;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36px;
+    margin:2 4px 0px 18px;
+    text-align: left;
+ }
+ .error .error_row .error_right p{
+    color:#666666;
+    font-size:17px;
+    line-height:27px;
+ }
+ .error .error_row .error_right .form{
+    position: relative;
+}
+.error .error_row .error_right .form input{
+     width: 100%;
+     background-color:#ffffff
+    border-color:#eeeeee;
+    border-radius:3px;
+    border-style:solid;
+    border-width:1px;
+    color:#666666;
+    font-size:18px;
+    line-height:27px;
+    padding:12px 70px 12px 17px;
     
-}
-.blog .blog_row .blog_left .blog_item:hover .blog_top img{
-    transform: scale(1.1);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-
+ }
+ .error .error_row .error_right .form .button-search{
+    position: absolute;
+    top:1px;
+    right: 1px;
+    bottom: 1px;
+    display: inline-block;
+    background-color:#009f4d;
+    border-radius:0px 4px 4px 0px;
+    box-shadow:#00a63f 0px 0px 0px 1.2px;
+    color:#ffffff;
+    line-height:24px;
+    padding:6px 20px;
+    text-align:center;
+    border: transparent;
+    }
+    .error .error_row .error_right i {
+        padding: 10px;
+    }
+    .error .error_row .error_right  a{
+     border-color:#000000;
+    border-radius:4px;
+    border-width:1px;
+    color:#3f3a64;
+    display:inline-block;
+    font-size:18px;
+    font-weight:600;
+    line-height:27px;
+    margin:48px 0px 0px;
+    padding:6px 12px;
+    text-align:center;
+    }
+ 
 
 
 
