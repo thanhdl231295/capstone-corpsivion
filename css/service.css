@@ -19,6 +19,7 @@ html,body{
     left: 0;
     z-index: 10;
 }
+
 .header .container{
     display: flex;
     flex-direction: row;
@@ -31,18 +32,19 @@ html,body{
 }
 .header .logo a{
     text-decoration: none;
-    color: #fff;
+    color: #dcdee0;
 }
 .header .logo p{
     font-size: 15px;
-    margin-left: 40px
+    margin-left: 40px;
 }
 .header .nabar a{
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
     margin: 0 10px;
-    color: #fff;
+    color: #dcdee0;
+    transition: all 1s;
 }
 header .logo .fa-align-right {
     color: #009f4d;
@@ -59,6 +61,33 @@ header .logo .fa-align-right {
     background-color: #009f4d;
     color: #fff;
     border-radius: 50%;
+}
+.header .nabar a:hover{
+    color: #fff;
+}
+.sticky{
+    background-color: #fff;  
+    box-shadow: 0 5 15px rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+    transition: all 0.4s;
+}
+.sticky .logo span{
+    color: #3f3a64;
+}
+.sticky .logo{
+    color: #3f3a64;
+}
+.sticky .logo p{
+    color: #3f3a64;
+}
+.sticky .logo .fa-align-right{
+    color:#3f3a64;
+}
+.sticky .icon .fa-moon{
+    color: #3f3a64 ;
+}
+.sticky .nabar a{
+    color: #3f3a64;
 }
 .carousel{
     background-image: url(/img/b1.jpg);
@@ -155,4 +184,327 @@ header .logo .fa-align-right {
     border-radius: 10px;
     margin-top: 24px;
     cursor: pointer;
+    transition:  all 1s;
+}
+.service .container .service_item .btn_know:hover{
+    background-color: #3f3a64;
+}
+.serve {
+    margin-top: 75px;
+    text-align: center;
+}
+.serve .title p{
+    font-size: 15px;
+    color: #7e7d7d;
+    font-weight: 600;
+}
+.serve .title h1 {
+    font-size: 35px;
+    color: #3f3a64;
+    font-weight: 600;
+}
+.serve .main .serve_row{
+    margin: 75px 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.serve .main .serve_row .serve_item{
+    background-color: #f8f9fa;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    text-align: left;
+    padding: 50px 35px;
+}
+.serve .main .serve_row .serve_item .box_icon i{
+    font-size: 38px;
+    color: #009f4d;
+}
+.serve .main .serve_row .serve_item .box_text a{
+    font-size: 22px;
+    color: #3f3a64;
+    text-decoration: none;
+    font-weight: 600;
+   transition:  all 0.4s;
+}.serve .main .serve_row .serve_item .box_text p{
+    font-size: 17px;
+    color: #666666;
+    margin-top: 15px;
+}
+.serve .main .serve_row .serve_item .box_text a:hover{
+    color: #009f4d;
+}
+.technology{
+    margin: 50px 0;
+    background-image: url(/img/bg1.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+}
+.technology::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(29, 42, 55, 0.5);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+.technology .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 50px 0;
+}
+.technology .technology_left p{
+    font-size: 15px;
+    
+}
+.technology .technology_left h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.technology .technology_left .info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 30px;
+    padding: 30px 0;
+    align-items: center;
+}
+.technology .technology_left .info .icon i{
+    font-size: 40px;
+}
+.technology .technology_left .info .text h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.technology .technology_left .info .text p{
+    font-size: 18px;
+    color: #eee;
+}
+.technology .technology_left .info .text a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #eee;
+}
+.technology .technology_right form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #000;
+    padding: 60px;
+    border-radius: 10px;
+}
+.technology .technology_right form h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #3f3a64;
+    font-weight: 600;
+    line-height: 34px;
+}
+.technology .technology_right form p{
+    font-size: 17px;
+    color: #666666;
+    margin-bottom: 24px;
+}
+.technology .technology_right form input{
+    padding: 12px 25px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    border:none;
+    outline: none;
+    line-height: 1.5;
+    height: 60px;
+}
+.technology .technology_right form  textarea{
+    padding: 12px 25px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    min-height: 100px;
+    outline: none;
+    border: none;
+    
+}
+.technology .technology_right form .btn_get{
+    padding: 15px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: block;
+    background-color: #00a63f;
+    border: 1px solid #00a63f;
+    color: #fff;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.4;
+}
+.technology .technology_right form .btn_get:hover{
+    background-color: #009f4d;
+}
+.solution {
+    text-align: center;
+    margin: 75px 0;
+    background-color: #f7f7f7;
+}
+.solution .title p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #666666;
+}
+.solution .title h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #3f3a64;
+}
+.solution .main .solution_row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 75px 0;
+}
+.solution .main .solution_row .solution_item {
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+.solution .main .solution_row .solution_item a{
+    text-decoration: none;
+    
+}
+.solution .main .solution_row .solution_item h3{
+    font-size: 22px;
+    color: #3f3a64;
+    margin: 25px 0 16px;
+    transition: all 0.4s;
+}
+.solution .main .solution_row .solution_item p{
+    font-size: 17px;
+    color: #666;
+}
+.solution .main .solution_row .solution_item h3:hover{
+    color: #00a63f;
+}
+.solution .main .solution_row .solution_item:hover{
+    box-shadow: 0 5px 15px rgba(1, 1, 1, 0.5);
+    transform: translateY(-5px);
+}
+.footer {
+    background-color: #151421;
+    color: #97a1a9;
+    padding: 75px 0;
+}
+.footer .footer_row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.footer .footer_row .item_1 .logo i{
+    font-size: 30px;
+    color: #009f4d;
+}
+.footer .footer_row .item_1 .logo{
+    margin-bottom: 24px;
+}
+.footer .footer_row .item_1 .logo span {
+    font-size: 30px;
+}
+.footer .footer_row .item_1 .logo p{
+    font-size: 15px;
+    margin-left: 35px;
+}
+.footer .footer_row .item_1 .icon{
+    margin-top: 20px;
+}
+.footer .footer_row .item_1 .icon a{
+    color: #97a1a9;
+    margin-right: 10px;
+}
+.footer .footer_row .item a{
+    text-decoration: none;
+    color: #97a1a9;
+}
+.footer .footer_row .item_3 a{
+    display: block;
+}
+.footer .footer_row .item h1{
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+.footer .footer_row .item_3 a{
+    margin-top: 20px;
+}
+.footer .footer_row .item_2 p{
+    margin-top: 15px;
+}
+.footer .footer_row .logo{
+    color: #fff;
+}
+.footer .footer_row a:hover{
+    color: #fff;
+    transition: all 0.4s;
+}
+.footer .footer_row .item .icon i:hover{
+    color: #fff;
+    transition: all 0.4s;
+}
+.coppyright {
+    text-align: center;
+    background-color: #151421;
+    color: #97a1a9;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px ;
+}
+.coppyright a{
+    text-decoration: none;
+    color: #009f4d;
+}
+.backtoup a{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    background-color: #009f4d;
+    color: #fff;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.bar_scroll {
+    position: fixed;
+    right: 0;
+    top: 140px;
+    width: 90px;
+    background: #0D1326;
+    color: #fff;
+    padding: 40px 5px 10px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.bar_scroll a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    transition:  all 1s;
+}
+.bar_scroll i{
+ display: block;
+}
+.bar_scroll .bar_mid{
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+}
+.bar_scroll a:hover{
+    color: #fff;
 }
