@@ -116,7 +116,9 @@ header.sticky .icon i:first-of-type{
 .header .header_logo--top a i{
     color: #009f4d;
 }
-
+.header  .icon_phone i{
+    opacity: 0;
+}
 
 
 
@@ -738,10 +740,7 @@ a{
     color: #97a1a9;
     transition: all .4s;
 }
-.footer .footer_row .footer_item .footer_body li{
 
-    /* margin-bottom: 5px; */
-}
 .footer .footer_row .footer_item .footer_body a{
     color: #97a1a9;
     transition: all .4s;
@@ -757,4 +756,30 @@ a{
 }
 .coppyright span{
     color: #009f4d;
+}
+
+
+
+/* REPONSIVE */
+/* MÀN HÌNH DESKTOP */
+@media screen  and(max-width : 1200px){
+  
+    .banner{
+        width: 1200px;
+    }
+}
+
+/* MÀN HÌNH TABLET */
+@media screen and (max-width : 992px){
+    
+}
+
+/* MÀN HÌNH ĐT XOAY NGANG */
+@media  screen and (max-width:768px){
+    
+}
+
+/* MÀN HÌNH XOAY DỌC */
+@media screen and (max-width : 576px){
+  
 }
