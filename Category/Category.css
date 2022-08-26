@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 htm{
 
@@ -29,7 +29,7 @@ header{
     transition: all 0.4s linear;
     
 }
-.header .container{
+.header .header_inner{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -116,7 +116,19 @@ header.sticky .icon i:first-of-type{
 .header .header_logo--top a i{
     color: #009f4d;
 }
-
+.header  .icon_phone{
+    display: none;
+}
+.header  .icon_phone i{
+        width: 34px;
+        height: 34px;
+        display: inline-block;
+        background: #009f4d;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 34px;
+        color: white;
+}
 
 
 
@@ -142,9 +154,9 @@ header.sticky .icon i:first-of-type{
     inset: 0;
     background-size: cover;
     height:400px;
-    box-sizing: inherit;
     z-index: -1;
     position: absolute;
+    overflow: hidden;
 }
 .banner .banner_title .banner_text{
     padding-top: 145px;
@@ -164,6 +176,7 @@ header.sticky .icon i:first-of-type{
     font-size: 20px;
     opacity: 0.7;
 }
+
 /* blog */
 .blog{
     background-color: #f8f8f8;
