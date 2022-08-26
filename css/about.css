@@ -782,251 +782,111 @@ a{
 
 /* REPONSIVE */
 /* MÀN HÌNH DESKTOP */
-@media screen  and(max-width : 1200px){
-  
-    .banner{
-        width: 1200px;
-    }
-}
+
 
 /* MÀN HÌNH TABLET */
-@media screen and (max-width : 992px){
-    body{
-        max-width: 992px;
-    }
+
 
 /* MÀN HÌNH ĐT XOAY NGANG */
-@media  screen and (max-width:768px){
-    .body{
-        max-width: 768px;
-        margin: 0;
-        padding: 0;
-       }
-       .container{
-        max-width: 768px;
-        margin: auto;
-        padding: 0;
-       }
-       .header{
-        width: 768px;
-       }
-       .header  .nav_header{
-        display: none;
-       }
-       .header  .icon_phone i{
-        opacity: 1;
-        position: absolute;
-        left: 730px;
-        color: white;
-       }
-       .header .icon i{
-        display: none;
-       }
-    
-       .banner::after{
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-        display: block;
-       }
-       .exp .exp_row{
-        display: block;
-       }
-       .exp .exp_row .exp_right{
-        text-align:justify;
-
-       }
-       .exp .exp_row{
-        display: block;
-        max-width: 768px;
-       }
-       .exp .exp_row .exp_right{
-        width: 768px;
-        margin-top: 50px;
-       }
-       .feature .feature_row{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-       
-       }
-       .feature .feature_row .feature_item .feature_icon{
-        font-size: 34px;
-        width: 40px;
-        color: #009f4d;
-        padding-right: 10px;
-        /* margin-right: 10px; */
-    }
-       .feature .feature_row .feature_item{
-        margin-top: 20px;
-       }
-       .page .page_row{
-        display: block;
-       }
-       .page .page_row .page_left{
-        width: 768px;
-       }
-       .page .page_row .page_right{
-        width: 100%;
-       }
-    
-    .page .page_row .page_right .page_thumbnail{
-           display: flex
-           max-width: 768px;
-
-       } 
-       .page .page_row .page_right .page_thumbnail .page_image{
-        width: 50%;
-        padding: 0 20px;
-       }
-    
-    .page .page_row .page_right .page_thumbnail .page_image img{
-        width: 100%;
-        height: 100%;
-        border-radius: 8px;
-    }
-       .team{
-        padding: 100px 0;
-       }
-       .team .container .team_row{
-        display: flex;
-        margin-right: -15px;
-        margin-left: -15px;
-        flex-wrap: wrap;
-    }
-       .team .team_row .team_col{
-        width: 50%;
-        padding: 10px;
-        
-    }
-       .team .team_row .team_col .team_item .team_item_thumbnail{
-        position: relative;
-    }
-    
-    .team .team_row .team_col .team_item .team_info{
-        position: absolute;
-        background-color: rgba(20, 20, 20, 0.7);
-        background-position: center center;
-        background-size: cover;
-        bottom: 0 ;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        color: white;
-        border-radius: 8px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        opacity: 0;
-        transition: all .4s ease-in-out;
-       
-    }
-    .team .team_row .team_col .team_item .team_info:hover{
-        opacity: 1;
-    }
-    .team .team_row .team_col .team_item .team_info:hover .team_info_text{
-        transform: translateY(-120px);
-    }
-    .team .team_row .team_col .team_item .team_info:hover .team_info_icon{
-        transform: translateY(-80px);
-    }
-    .team .team_row .team_col .team_item .team_info .team_info_text{
-        transition: all .4s ease-in-out;
-    }
-    .team .team_row .team_col .team_item .team_info .team_info_icon{
-        transition: all .4s ease-in-out;
-    }
-    
-    
-    
-    
-    .team .team_row .team_col .team_item .team_info a{
-        line-height: 37px;
-        color: #fff;
-        font-size: 14px;
-        width: 37px;
-        height: 37px;
-        border-radius: 50%;
-        text-align: center;
-        transition: all 0.2s linear;
-        margin-right: 10px;
-        display: inline-block;
-        transition: all .4s ease-in-out;
-    
-    }
-    .team .team_row .team_col .team_item .team_info a:hover{
-        background-color: #616161;
-        color: #fff;
-    }
-
-       .content .content_title{
-        text-align: center;
-       }
-       .content .content_title h2{
-        font-size: 32px;
-        line-height: 40px;
-        font-weight: 700;
-       }
-       .content .content_row{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-        }
-        .contact{
-            padding: 100px 15px;
-        }
-        .contact .contact_row{
-            display: block;  
-        }
-        .contact .contact_row .contact_left{
-            width: 100%;
-            margin-left: 0px;
-           
-        }
-        .footer .footer_row{
-            display: grid;
-            grid-template-columns: 2fr  2fr;
-            gap: 20px;
-        }
-}
 
 /* MÀN HÌNH XOAY DỌC */
 @media screen and (max-width : 576px){
-    /* HEADER */
-    .header {
-        width: 576px;
+    .header .nav_header{
+        display: none;
     }
-      .icon_phone{
-        margin-bottom: 30px;
-        width: 576px;
+    .exp .exp_row{
+        display: block;
+    
     }
-    .header  .icon_phone i{
-        max-width: 576px;
-        opacity: 1;
-        color: white;
-        width: 34px;
-        height: 34px;
-        display: inline-block;
-        background: #009f4d;
-        border-radius: 4px;
-        text-align: center;
-        line-height: 34px;
-        color: white;
+    .icon{
+        display: none;
+    }
+    .exp .exp_row .exp_left{
+        width: 100%;
+    }
+    .exp .exp_row .exp_left .exp_info{
+        width: 100%;
+        height: 100%;
+    }
+    .exp .exp_row .exp_left .exp_box{
+        width: 150px;
+        height: 150px;
         
     }
-   
-    .header .header_logo--top a span {
-        
-    }
-    .header .header_logo--top a i{
+    .exp .exp_row .exp_left .exp_box .exp_text h6{
         font-size: 20px;
-        font-weight: 600;
+        line-height: 20px;
+        padding-bottom: 10px;
     }
-    .header .header_logo--bottom a{
-        font-size: 8px;
-        padding-left: 23px;
-        text-decoration: none;
-        color: #fff;
+    .exp .exp_row .exp_left .exp_box .exp_text p{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    .exp .exp_row .exp_right {
+        padding: 0 15px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .exp .exp_row .exp_left .exp_box{
+        right: 30px;
+        bottom: 10px;
+    }
+    .feature .feature_row {
+        display: block;
+    }
+    .feature .feature_row .feature_item{
+        margin-bottom: 20px;
+        padding: 25px 20px;
+    }
+    .page .page_row {
+        display: block;
+        align-items: center;
+    }
+    
+    .page .page_row .page_left {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .page .page_row .page_right {
+        width: 100%;
+    }
+    .page .page_row .page_right .page_thumbnail .page_image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .page .page_row .page_right .page_thumbnail {
+        display: block;
+        gap: 40px;
+        width: 100%;
+    }
+    .team .container .team_row {
+        display: block;
+    }
+    .team .team_row .team_col {
+        width: 100%;
+        padding: 10px;
+    }
+    .content .content_row {
+        display: block;
+    }
+    .content .content_row .content_item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .contact .contact_row {
+        display: block;
+    }
+    .contact .contact_row .contact_left {
+        width: 100%;
+        margin-left: 0;
+    }
+    .footer .footer_row {
+        display: grid;
+        grid-template-columns: 1fr;
     }
     /* BANNER */
 
