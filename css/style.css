@@ -19,6 +19,7 @@ body{
     left: 0;
     width: 100%;
     transition:  all 1s;
+    padding: 20px 0;
 }
 .header .container{
     display: flex;
@@ -26,7 +27,7 @@ body{
     justify-content: space-between;
     align-items: center;
     font-weight: 600; 
-    padding: 20px 0;
+    
 }
 .header .header_logo a{
     text-decoration: none;
@@ -50,6 +51,7 @@ body{
     font-size: 15px;
     color: #dcdee0;
     transition:  all 1s;
+    display: inline-block;
 }
 .header .header_bot .fa-magnifying-glass{
     width: 45px;
@@ -69,6 +71,54 @@ body{
     text-align: center;
     line-height: 30px;
     color: #fff;
+}
+.header .header_mid .sub_menu a{
+    display: block;
+    background-color: #fff;
+    color: #3f3a64;
+    width: 100%;
+    padding: 8px 20px;
+    
+}
+.header .header_mid{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.header .header_mid a{
+    display: block;
+}
+.header .header_mid .sub_menu{
+    border-radius: 10px;   
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background-color: #fff;
+    padding: 5px 5px;
+    display: none;
+}
+.header .header_mid .sub_menu::before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color:#fff;
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: 49%;
+    transform: translateX(-50%) rotate(-45deg);
+}
+.header .header_mid .MenuMain:hover .sub_menu{
+    display: block;
+}
+.header .header_mid .MenuMain .sub_menu a:hover{
+    color: #009f4d;
+}
+.header .container .navbar_toggler{
+    display: none;
+    
+
 }
 .sticky{
     background-color: #fff;
@@ -91,9 +141,13 @@ body{
 .sticky .header_bot .fa-moon{
     color: #3f3a64 ;
 }
+.sticky .navbar_toggler i{
+    color: #3f3a64;
+}
 header .header_mid a:hover{
     color: #fff;
 }
+
 .carousel{
     background-image: url(/img/b1.jpg);
     background-position: center;
@@ -214,13 +268,15 @@ header .header_mid a:hover{
 }
 .about ul a{
     text-decoration: none;
+    color: #3f3a64;
 }
 .about ul a i{
     color: #009f4d;
     margin-right: 10px;
 }
 .about ul li{
-    margin: 10px 0;;
+    margin: 10px 0;
+    color: #3f3a64;
 }
 .about .col2{
     display: flex;
@@ -829,4 +885,83 @@ header .header_mid a:hover{
 }
 .bar_scroll a:hover{
     color: #fff;
+}
+@media screen and(max-width:1200px){
+
+}
+@media screen and (max-width:992px){
+
+}
+@media screen and (max-width:768px){
+    .header .container .navbar_toggler{
+        display: inline-block;
+        font-size: 32px;
+        border: transparent;
+        background-color: transparent;
+        color: #fff;
+    
+    }
+    .sticky .navbar_toggler{
+        color: #3f3a64;
+    }
+    .header .header_mid{
+        display: none;
+    }
+    .carousel h1{
+        font-size: 50px;
+    }
+    .carousel p {
+        font-size: 18px;
+    }
+    .about .container{
+        display: block;
+    }
+    .about .col4 .about_img{
+        display: block;
+    }
+    .about .col4{
+        padding: 0px;
+    }
+    .challenge .challenge_row{
+        display: block;
+    }
+    .challenge .challenge_row .challenge_right{
+        display: block;
+    }
+    .services .services_row{
+        display: block;
+    }
+    .gallery .main .gallery_row{
+        display: block;
+    }
+    .gallery .main .gallery_row .gallery_item {
+        margin-bottom: 30px;
+    }
+    .success .success_row{
+        display: block;
+    }
+    .brand .brand_row{
+        display: block;
+    }
+    .brand .brand_row img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .latenews .main .latenews_row{
+        display: block;
+    }
+    .latenews .main .latenews_row .late_item {
+     margin-bottom: 30px;
+    }
+    .footer .footer_row{
+    display: block;
+    }
+    .subscribe .container .sub{
+        width: auto;
+    }
+}
+@media screen and (max-width:576px){
+    .subscribe .container .sub{
+        width: auto;
+    }
 }

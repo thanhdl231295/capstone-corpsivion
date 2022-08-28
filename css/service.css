@@ -19,7 +19,6 @@ html,body{
     left: 0;
     z-index: 10;
 }
-
 .header .container{
     display: flex;
     flex-direction: row;
@@ -507,4 +506,46 @@ header .logo .fa-align-right {
 }
 .bar_scroll a:hover{
     color: #fff;
+}
+.header .container .navbar_toggler{
+    display: none;
+}
+@media screen and (max-width :1200px){
+
+}
+@media screen and(max-width:992px){
+
+}
+@media screen and (max-width :768px){
+    .header .container .navbar_toggler{
+        display: inline-block;
+        font-size: 32px;
+        background-color: transparent;
+        border: transparent;
+        color: #fff;
+    }
+    .header .container .nabar{
+        display: none;
+    }
+    .serve .main .serve_row{
+        display: block;
+    }
+    .technology .container{
+        display: block;
+    }
+    .footer .footer_row{
+        display: block;
+    }
+    .solution .main .solution_row{
+        display: block;
+    }
+    .sticky .navbar_toggler i{
+        color: #3f3a64;
+    }
+    .service .main .service_row{
+        display: block;
+    }
+}
+@media screen and (max-width:576px){
+
 }
