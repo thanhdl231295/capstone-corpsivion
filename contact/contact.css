@@ -144,10 +144,23 @@ header.sticky .icon i:first-of-type{
     align-items: center;
     background-image: url(../img/b1.jpg);
     z-index: 0 ;
-    position: relative;
-
-    
+    position: relative; 
 }
+.btn{
+    padding: 15px 50px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    border-radius: 8px;
+    background: #00a63f;
+    color: white;
+}
+.btn:hover{
+ background: #005a22;
+ color: white;
+}
+
 .banner::after{
     content: "";
     background:rgba(29 , 42 ,55 ,0.7);
@@ -295,6 +308,9 @@ header.sticky .icon i:first-of-type{
     text-align: right;
     margin-top: 30px;
  }
+ .form .form_main .point{
+
+ }
 
  
 
@@ -380,4 +396,67 @@ a{
 }
 .coppyright span{
     color: #009f4d;
+}
+
+
+/* reponsive */
+@media screen and (max-width: 768px ){
+    .nav_header{
+        display: none;
+    }
+    .header .header_inner{
+        padding: 0 20px;
+    }
+    .icon{
+        display: none;
+    }
+    .header  .icon_phone{
+        display: block;
+    }
+    .contact .contact_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact .contact_main .contact_item{
+        
+        width: 100%; 
+    }
+    .contact .contact_main .item1{
+        margin-left: 50%;
+    }
+    .footer .footer_row{
+        display: block;
+    }
+    .form .form_main .point{
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width: 576px){
+    .nav_header{
+        display: none;
+    }
+    .icon{
+        display: none;
+    }
+    .header  .icon_phone{
+        display: block;
+    }
+    .contact .contact_main{
+        display: block;
+    }
+    .contact .contact_main .contact_item{
+        margin: 20px 0;
+    }
+    .footer .footer_row{
+        display: block;
+    }
+    .form .form_main .point{
+        text-align: center;
+    }
 }

@@ -192,7 +192,6 @@ padding-top: 100px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 880px;
     margin: auto;
  }
  .error .error_row .error_left{
@@ -203,15 +202,6 @@ padding-top: 100px;
     height: 360px;
         display: inline;
  }
-
-
-
-
-
-
-
-
-
  .error .error_row .error_right{
     width: 50%;
  }
@@ -236,23 +226,23 @@ padding-top: 100px;
     font-size:17px;
     line-height:27px;
  }
- .error .error_row .error_right .form{
-    position: relative;
-}
-.error .error_row .error_right .form input{
-     width: 100%;
-     background-color:#ffffff
-    border-color:#eeeeee;
+.error .error_row .error_right .form {
+    width: 100%;
+    background:#ffffff;
+    border: 1px solid transparent;
     border-radius:3px;
-    border-style:solid;
-    border-width:1px;
     color:#666666;
     font-size:18px;
     line-height:27px;
     padding:12px 70px 12px 17px;
     
+    
+}
+.error .error_row .error_right form{
+     position: relative;
+
  }
- .error .error_row .error_right .form .button-search{
+ .error .error_row .error_right  .button-search{
     position: absolute;
     top:1px;
     right: 1px;
@@ -366,3 +356,51 @@ a{
 .coppyright span{
     color: #009f4d;
 }
+/* reponsive */
+@media screen and (max-width:768px){
+    .nav_header{
+        display: none;
+    }
+    .icon{
+        display: none;
+    }
+    .header .icon_phone{
+        display: block;
+    }
+    
+    .footer .footer_row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    
+   
+@media screen and (max-width:576px) {
+    .nav_header{
+        display: none;
+    }
+    .icon{
+        display: none;
+    }
+    .header .icon_phone{
+        display: block;
+    }
+    .error .error_row{
+        display: block;
+    }
+    .error .error_row .error_left{
+        width: 100%;
+    }
+    .error .error_row .error_right{
+        width: 60%;
+    }
+    .error .error_row .error_right .form{
+        width: 100%;
+    }
+    .footer .footer_row{
+        display: block;
+    }
+    .blog .blog_row{
+        display: block;
+    }
+} 
