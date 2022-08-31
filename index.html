@@ -17,6 +17,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
 
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -342,6 +345,96 @@
                 </div>
             </div>
     </section>
+    <section class="feedback">
+        <header class="title">
+            <p>HAPPY CLIENTS FEEDBACK</p>
+            <h1>Reviews and Testimonials</h1>
+        </header>
+
+        <div class="feedback_content">
+
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="feedback_box">
+                        <div class="feedback_top">
+                            <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                Dolores molestias adipisci dolo amet!.</p>
+                        </div>
+                        <div class="feedback_bottom">
+                            <div class="thumner">
+                                <img src="./img/team1.jpg" alt="">
+                            </div>
+                            <div class="feedback_name">
+                                <h3>John wilson</h3>
+                                <p>Student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="feedback_box">
+                        <div class="feedback_top">
+                            <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                Dolores molestias adipisci dolo amet!.</p>
+                        </div>
+                        <div class="feedback_bottom">
+                            <div class="thumner">
+                                <img src="./img/team2.jpg" alt="">
+                            </div>
+                            <div class="feedback_name">
+                                <h3>Julia Sakura</h3>
+                                <p>Student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="feedback_box">
+                        <div class="feedback_top">
+                            <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                Dolores molestias adipisci dolo amet!.</p>
+                        </div>
+                        <div class="feedback_bottom">
+                            <div class="thumner">
+                                <img src="./img/team3.jpg" alt="">
+                            </div>
+                            <div class="feedback_name">
+                                <h3>Roy Linderson</h3>
+                                <p>Student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="feedback_box">
+                        <div class="feedback_top">
+                            <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                Dolores molestias adipisci dolo amet!.</p>
+                        </div>
+                        <div class="feedback_bottom">
+                            <div class="thumner">
+                                <img src="./img/team4.jpg" alt="">
+                            </div>
+                            <div class="feedback_name">
+                                <h3>Smitg Johnson</h3>
+                                <p>Student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
     <section class="clients">
         <div class="container">
 
@@ -525,6 +618,28 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"> </script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        });
+
+    </script>
     <script>
         $(document).ready(function () {
             $(window).scroll(function () {
