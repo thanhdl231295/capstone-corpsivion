@@ -60,7 +60,7 @@ header{
 .header .header_inner .nav_header .dropdown .menu_item::before{
     content: "";
     width: 14px;
-    border: 1px solid #eee;
+    border: 1px solid #fff;
     height: 14px;
     background: #fff;
     position: absolute;
