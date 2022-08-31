@@ -53,6 +53,9 @@ body{
     transition:  all 1s;
     display: inline-block;
 }
+.header .header_bot a{
+    text-decoration: none;
+}
 .header .header_bot .fa-magnifying-glass{
     width: 45px;
     height: 45px;
@@ -81,7 +84,6 @@ body{
     color: #3f3a64;
     width: 100%;
     padding: 8px 20px;
-    
 }
 .header .header_mid{
     position: relative;
@@ -101,6 +103,7 @@ body{
     padding: 5px 5px;
     display: none;
 }
+
 .header .header_mid .sub_menu::before{
     content: "";
     width: 14px;

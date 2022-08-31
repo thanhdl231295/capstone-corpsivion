@@ -37,14 +37,7 @@ html,body{
     font-size: 15px;
     margin-left: 40px;
 }
-.header .nabar .sub_menu a{
-    display: block;
-    background-color: #fff;
-    color: #3f3a64;
-    width: 100%;
-    padding: 8px 20px;
-    
-}
+
 .header .nabar{
     position: relative;
     display: flex;
@@ -62,7 +55,14 @@ html,body{
     background-color: #fff;
     padding: 5px 5px;
     display: none;
-    overflow: hidden;
+}
+.header .nabar .sub_menu a{
+    display: block;
+    background-color: #fff;
+    color: #3f3a64;
+    width: 90%;
+    padding: 8px 20px;
+    
 }
 .header .nabar .sub_menu::before{
     content: "";
