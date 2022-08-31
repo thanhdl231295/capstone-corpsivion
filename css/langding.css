@@ -634,6 +634,66 @@ html,body{
 .success .success_row .success_item .progressall{
     margin-bottom: 30px;
 }
+.feedback{
+    text-align: center;
+}
+.feedback .title p{
+font-size: 14px;
+margin-bottom: 4px;
+color: #7e7d7d;
+}
+.feedback .title h1{
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 600;
+    color: #3f3a64;
+}
+
+.feedback_box{
+    max-width: 900px;
+    padding: 40px 30px;
+    margin: 0 auto;
+}
+.feedback .feedback_content{
+    text-align: center;
+}
+.feedback .feedback_content .feedback_top p{
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.8;
+    color: #666;
+}
+.feedback .feedback_content .feedback_bottom .thumner{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: right;
+}
+.feedback .feedback_content .feedback_bottom img{
+    width: 100%;
+    min-height: 100%;
+    
+}
+.feedback .feedback_content .feedback_bottom{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+.feedback .feedback_content .feedback_bottom .feedback_name h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #3f3a64;
+}
+.feedback .feedback_content .feedback_bottom .feedback_name p{
+    font-size: 17px;
+    line-height: 27px;
+    color: #666;
+}
 .about{
     padding: 155px 0;
 }
