@@ -72,6 +72,9 @@ body{
     line-height: 30px;
     color: #fff;
 }
+.header .header_inner .nav_header{
+    display: flex;
+}
 .header .header_mid .sub_menu a{
     display: block;
     background-color: #fff;
